@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;   
+    background-color: #021220;   
 }
 
 main {
@@ -67,8 +67,7 @@ hr {
 }
 
 .option-button:hover {
-    background-color: #4d5b9e;
-    color: white;
+    background-color: rgb(147, 176, 186);
 }
 
 .newquiz-btn {
