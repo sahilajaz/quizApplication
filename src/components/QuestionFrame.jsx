@@ -9,7 +9,7 @@ const QuestionFrame = (props) => {
     <button
       className="option-button"
       key={id}
-      onClick={() => props.handleColor(props.questionIndex, id)}
+      onClick={() => props.handleColor(props.questionIndex, id, answer)}
       style={props.changeButtonStyle(props.questionIndex, id)}>
       {answer}
     </button>
