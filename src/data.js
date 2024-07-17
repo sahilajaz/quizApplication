@@ -177,8 +177,6 @@ const data = {
             "correct_answer": "True",
             "incorrect_answers": [
                 "False" ,
-                "true",
-                "false"
             ]
         },
         {

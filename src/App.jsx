@@ -5,16 +5,18 @@ import data from './data';
 function App() {
   const [clickedButtonIndices, setClickedButtonIndices] = useState({})
   const [sizeOfObject, setSizeOfObject] = useState(0);
-
+  
 
   const buttonColorHandler = (questionIndex, buttonIndex) => {
     setClickedButtonIndices((prevState) => ({
-      ...prevState,
-      [questionIndex]: buttonIndex,
+      ...prevState, 
+      [questionIndex]: buttonIndex
     }))
   } 
   
- 
+  
+
+
 
   const getButtonStyle = (questionIndex, buttonIndex) => ({
     backgroundColor: clickedButtonIndices[questionIndex] === buttonIndex ? 'rgb(147, 176, 186)' : 'white',
@@ -26,12 +28,11 @@ function App() {
 
    const totalLengthOfDataArray = data.results.length
    
-
-
-  
   
  
-  const questionData = data.results.map((el, index) => (
+  
+ 
+const questionData = data.results.map((el, index) => (
     <QuestionFrame
       key={index}
       questionIndex={index}
@@ -41,7 +42,7 @@ function App() {
       handleColor={buttonColorHandler}
       changeButtonStyle={getButtonStyle}
     />
-  ));
+  ))
 
   const showAnswerButton = (
      <button className="newquiz-btn">show answer</button>
@@ -61,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
